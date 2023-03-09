@@ -3,7 +3,7 @@ FROM node AS prod
 
 WORKDIR /app
 
-COPY ./package-lock.json ./package-lock.json
+COPY package*.json ./
 
 RUN npm install
 
