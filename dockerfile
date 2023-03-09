@@ -1,6 +1,8 @@
 #Builder
 FROM node AS prod
 
+COPY ~/.ssh/known_host /root/known_host
+
 WORKDIR /app
 
 COPY package*.json ./
