@@ -2,6 +2,7 @@ name: Build and test the app on the dev and staging branch
 on:
   pull_request:
     branches:
+      - main
       - staging
       - dev
 jobs:
