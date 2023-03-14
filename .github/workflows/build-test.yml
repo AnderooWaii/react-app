@@ -1,0 +1,19 @@
+name: Build and test the app on the dev and staging branch
+on:
+  pull_request:
+    branches:
+      - staging
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Go
+        uses: actions/setup-node@v3
+        with:
+          node-version: '19'
+      - name: Install package
+        run: npm install
+      - name: Build
+        run: npm run build
