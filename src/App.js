@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Rasengan Here ini feature baru
+          Expose Rasengan To The World
         </a>
       </header>
     </div>
