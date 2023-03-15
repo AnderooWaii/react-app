@@ -16,4 +16,4 @@ jobs:
       - name: Install Caprover
         run: npm install -g caprover
       - name: Deploy to caprover
-        run: caprover deploy -h '${{ secrets.CAPROVER_URL }}' -p '${{ secrets.CAPROVER_PASS }}' -b 'stg' -a '${{ secrets.CAPROVER_REACT }}'
+        run: caprover deploy -h '${{ secrets.CAPROVER_URL }}' -p '${{ secrets.CAPROVER_PASS }}' -b 'staging' -a '${{ secrets.CAPROVER_REACT }}'
